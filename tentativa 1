@@ -1,0 +1,121 @@
+# # exercício 1
+print("aqui estão todos os numeros de 1 à 50")
+x = 1
+while x <= 50:
+   print(x)
+   x = x + 1
+
+# # exercíco 2
+print("FIM")
+
+print("Estes são os números pares de 1 a 100:")
+
+for num in range(1,101):
+
+  if num % 2 == 0:
+
+      print(num)
+
+print("FIM")
+
+# # exercício 3
+
+numero = int(input('Informe o numero para ver a tabuada: '))
+
+print ('\n Tabuada de', numero, ':')
+
+for i in range(1, 11):
+
+  print (numero, 'X', i, '=', (numero * i))
+
+print("FIM")
+
+# # exercício 4 - não consegui fazer
+#exercício 5
+
+i = 1
+P = 0
+I = 0
+while i <= 10:
+   numero = int(input("Insira um número (vai se repetir 10 vezes)"))
+   i = i + 1
+   if (numero % 2 == 0):
+       P = P + 1
+   else:
+       I = I + 1
+
+print("Números pares: ", P, " números ímpares: ", I)
+
+#
+# # exercicio 6
+
+n = 1
+c1 = 0
+
+while n > 0:
+   n = int(input("Digite um número (vai se repetir 10 vezes)"))
+   if n >= 0 and n <= 20:
+       c1 = c1 + 1
+print("A quantidade de números entre 0 e 20 é: ")
+
+#exercicio 7
+
+x = 0
+y = 50
+soma = 0
+if (x % 2 != 0):
+   x += 1
+while (x <= y):
+   soma = soma + x
+   x += 2
+print("a soma entre os numeros parede de 0 e 50 são: ")
+print(soma)
+#
+# #exercicio 8
+def divisors(n: int) -> [int]:
+
+  answer = []
+
+  for num in range(1, n + 1):
+
+      if n % num == 0:
+
+          answer.append(num)
+
+  return answer
+
+def main():
+
+  num = int(input())
+
+  print(divisors(num))
+
+if __name__ == '__main__':
+
+  main()
+
+# #exercicio 9
+n1 = int(input('Digite um número'))
+n2 = int(input('Digite um número'))
+n3 = int(input('Digite um número'))
+n4 = int(input('Digite um número'))
+n5 = int(input('Digite um número'))
+n6 = int(input('Digite um número'))
+n7 = int(input('Digite um número'))
+n8 = int(input('Digite um número'))
+n9 = int(input('Digite um número'))
+n10 = int(input('Digite um número'))
+
+
+Lsta=[n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]
+Lsta.sort()
+# print(Lsta)
+
+#exerciico 10
+
+int(input("esta é a lista: 2, 4, 7, 2, 3, 3, 1, 0, 2, 6"))
+
+print("2")
+
+
+
